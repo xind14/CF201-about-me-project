@@ -131,30 +131,37 @@ function travelQ(){
 travelQ();
 
 //Question 6 too high too low loops 4 attempts
-let age = 25;
-let attempts = 4;
 
-for( let i = 1; i <= attempts; i++ ) {
-   let ageGuess = prompt("Guess how old I am?");
-   let guess = Number(ageGuess);
-   console.log(guess)
+function ageQ(){
 
-   if( guess === age ) {
-    //console.log(Congrats! You guessed correctly! I am 25!)
-    alert("Congrats! You guessed correctly! I am 25!");
-    totalCorrect++;
-    break;
-   } else if (guess < age) {
-    //console.log(Too low! I wish I was younger... Try Again!)
-    alert ("Too low! I wish I was younger... Try Again!");
-   } else if (guess > age) {
-    //console.log(Too high! I'm not that old! Try Again!)
-    alert("Too high! I'm not that old! Try Again!");
+  let age = 25;
+  let attempts = 4;
+  
+  for( let i = 1; i <= attempts; i++ ) {
+     let ageGuess = prompt("Guess how old I am?");
+     let guess = Number(ageGuess);
+     console.log(guess)
+  
+     if( guess === age ) {
+      //console.log(Congrats! You guessed correctly! I am 25!)
+      alert("Congrats! You guessed correctly! I am 25!");
+      totalCorrect++;
+      break;
+     } else if (guess < age) {
+      //console.log(Too low! I wish I was younger... Try Again!)
+      alert ("Too low! I wish I was younger... Try Again!");
+     } else if (guess > age) {
+      //console.log(Too high! I'm not that old! Try Again!)
+      alert("Too high! I'm not that old! Try Again!");
+     }
+      if (i === attempts) {
+      alert("You used up all your attempts. I am 25!")
+    } 
    }
-    if (i === attempts) {
-    alert("You used up all your attempts. I am 25!")
-  } 
- }
+  
+
+}
+ageQ();
 
 //Question 7 multiple correct in array, 6 attempts, display correct answers with loop, track total # of correct answer and give them score out of 7
 
