@@ -57,7 +57,9 @@ switch (color) {
 colorQ();
 
 // Question 3
-let hobbies = prompt("Do you think I have any athletic hobbies? Yes or No?");
+function hobbiesQ(){
+
+  let hobbies = prompt("Do you think I have any athletic hobbies? Yes or No?");
 hobbies = hobbies.toLowerCase();
 console.log(hobbies);
 
@@ -75,7 +77,12 @@ switch (hobbies) {
     break;
 }
 
+
+}
+hobbiesQ();
+
 // Question 4
+
 let season = prompt("Do you think my favorite season is fall? Yes or No?");
 season = season.toLowerCase();
 console.log(season);
