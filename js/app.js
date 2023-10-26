@@ -1,6 +1,7 @@
 "use strict";
 
 //Ask user's name
+
 let userName = prompt("What is your name?");
 console.log(userName);
 //console.log(Hey, ${userName},! Welcome to my site! Let's answer some questions to get to know me.);
@@ -13,7 +14,8 @@ alert(
 let totalCorrect = 0
 
 // Question 1
-let cat = prompt("Do you think I have 3 cat? Yes or No?");
+function catQ(){
+  let cat = prompt("Do you think I have 3 cat? Yes or No?");
 cat = cat.toLowerCase();
 console.log(cat);
 
@@ -25,7 +27,9 @@ if (cat === "no" || cat === "n") {
   alert("Correct! I do have three!");
   totalCorrect++;
 }
+}
 
+catQ(); 
 // Question 2
 let color = prompt("Do you think orange is my favorite color? Yes or No?");
 color = color.toLowerCase();
