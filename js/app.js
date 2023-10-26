@@ -158,7 +158,9 @@ for( let i = 1; i <= attempts; i++ ) {
 
 //Question 7 multiple correct in array, 6 attempts, display correct answers with loop, track total # of correct answer and give them score out of 7
 
-let catName = ["Cat", "Emi","Ava"];
+function catNameQ(){
+
+  let catName = ["Cat", "Emi","Ava"];
 let catAttempts = 6;
 let rightAnswer = false;
 
@@ -180,6 +182,9 @@ while (!rightAnswer && catAttempts >0){
       }
     }
   }
+
+}
+catNameQ();
 
 //track of score message
 //console.log(You got ${totalCorrect} out of 7)
