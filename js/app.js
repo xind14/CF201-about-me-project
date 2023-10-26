@@ -31,7 +31,10 @@ if (cat === "no" || cat === "n") {
 
 catQ(); 
 // Question 2
-let color = prompt("Do you think orange is my favorite color? Yes or No?");
+function colorQ(){
+
+
+  let color = prompt("Do you think orange is my favorite color? Yes or No?");
 color = color.toLowerCase();
 console.log(color);
 
@@ -47,7 +50,11 @@ switch (color) {
     //console.log(That is wrong! I like forest green! );
     alert("That is wrong! I like forest green!");
     break;
+
 }
+
+}
+colorQ();
 
 // Question 3
 let hobbies = prompt("Do you think I have any athletic hobbies? Yes or No?");
