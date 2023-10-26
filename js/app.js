@@ -8,6 +8,10 @@ alert(
   `Hey, ${userName}! Welcome to my site! Let's answer some questions to get to know me.`
 );
 
+
+//Point counter 
+let totalCorrect = 0
+
 // Question 1
 let cat = prompt("Do you think I have 3 cat? Yes or No?");
 cat = cat.toLowerCase();
@@ -18,7 +22,8 @@ if (cat === "no" || cat === "n") {
   alert("Well, you would be wrong! I do have 3!");
 } else if (cat === "yes" || cat === "y") {
   // console.log(Correct! I do have three! Their names are Cat, Cat2, and Cat3);
-  alert("Correct! I do have three! Their names are Cat, Cat2, and Cat3");
+  alert("Correct! I do have three!");
+  totalCorrect++;
 }
 
 // Question 2
@@ -31,6 +36,7 @@ switch (color) {
   case "n":
     //console.log(Amazing! You know me so well!);
     alert("Amazing! You know me so well! I like forest green!");
+    totalCorrect++;
     break;
   case "yes":
   case "y":
@@ -49,6 +55,7 @@ switch (hobbies) {
   case "y":
     //console.log(Great guess! I boulder in my spare time!);
     alert("Great guess! I boulder in my spare time!");
+    totalCorrect++;
     break;
   case "no":
   case "n":
@@ -67,6 +74,7 @@ switch (season) {
   case "n":
     //console.log(That's right! My favorite season is Winter.);
     alert("That's right! My favorite season is Winter.");
+    totalCorrect++;
     break;
   case "yes":
   case "y":
@@ -85,6 +93,7 @@ switch (travel) {
   case "y":
     //console.log(You guessed right! I've been in 10 countries total.);
     alert("You guessed right! I've been in 10 countries total.");
+    totalCorrect++;
     break;
   case "no":
   case "n":
@@ -94,64 +103,62 @@ switch (travel) {
 }
 
 //Question 6 too high too low loops 4 attempts
-//When a user enters information through the prompt() function in JavaScript, the input is always treated as a string, even if the user enters a number. The Number() function is often used to convert that string representation of a number into an actual numeric value.
-
-let age = 25
-let attempts = 4
+let age = 25;
+let attempts = 4;
 
 for( let i = 1; i <= attempts; i++ ) {
    let ageGuess = prompt("Guess how old I am?");
-   guess = Number(ageGuess);
+   let guess = Number(ageGuess);
+   console.log(guess)
 
    if( guess === age ) {
+    //console.log(Congrats! You guessed correctly! I am 25!)
     alert("Congrats! You guessed correctly! I am 25!");
+    totalCorrect++;
     break;
    } else if (guess < age) {
-    alert (" Too low! I wish I was younger... Try Again!");
-   } else {
-    alert ("Too high! I'm not that old! Try Again! ");
+    //console.log(Too low! I wish I was younger... Try Again!)
+    alert ("Too low! I wish I was younger... Try Again!");
+   } else if (guess > age) {
+    //console.log(Too high! I'm not that old! Try Again!)
+    alert("Too high! I'm not that old! Try Again!");
    }
-}
-if (i === attempts)
+    if (i === attempts) {
+    alert("You used up all your attempts. I am 25!")
+  } 
+ }
 
+//Question 7 multiple correct in array, 6 attempts, display correct answers with loop, track total # of correct answer and give them score out of 7
 
+let catName = ["Cat", "Emi","Ava"];
+let catAttempts = 6;
+let rightAnswer = false;
 
+while (!rightAnswer && catAttempts >0){
+  let catGuess = prompt ("What is the name of one of my cats?");
+  if (catName.includes(catGuess)) {
+    //console.log(Right Answer!)
+    alert("Right Answer!");
+    rightAnswer = true;
+    totalCorrect++;
+   } else {
+      catAttempts--;
+      if (catAttempts > 0){
+        //console.log(Incorrect! Try Again!)
+        alert ("Incorrect! Try Again!");
+      } else {        
+        //console.log(You don't have anymore attempts!)
+        alert("You don't have anymore attempts! Their names are Cat, Emi, and Ava.");
+      }
+    }
+  }
 
-
-
-
-
+//track of score message
+//console.log(You got ${totalCorrect} out of 7)
+alert(`You got ${totalCorrect} out of 7`)
 
 // Final message
+//console.log(Thanks for getting to know me, ${userName}!)
 alert(`Thanks for getting to know me, ${userName}!`);
 
 
-
-
-
-/*
-str="John" str.charat(0), str.substring (0,1)
-let dogs = ["Rosie", "Geno", "Rocky"];
-
-let gotItRight = false;
-
-while( ! gotItRight ) {
-  let guess = prompt("What is the name of a dog of mine?");
-  if( dogs.includes( guess ) ) {
-    alert("Right!");
-    gotItRight = true;
-  }
-}
-
-// Let them try 4
-for( let i = 1; i < 5; i++ ) {
-
-   let guess = prompt("How old am I?");
-   // guess = "55"
-   guess = Number(guess);
-   if( guess === 55 ) {
-    alert("Right!");
-    break;
-   }
-
-}

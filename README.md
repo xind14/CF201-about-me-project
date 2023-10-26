@@ -40,13 +40,16 @@ Additional functionality added to your About Me Guessing Game. A "Top Ten" favor
 
 ### Lighthouse Accessibility Report Score
 
-![Lighthouse report for Lab 2](img/lighthouse2.png)
+![Lighthouse report for Lab 2](img/lighthouse3.png)
 
 ### Reflections and Comments
 
 1. How did this go, overall?
-  
+     - Less stressful then yesterday because we only had to deal with 2 additional questions while yesterday we had to start from scratch including creating and setting up pages which took time. I still do not understand CSS formatting that well.
+     
 2. What observations or questions do you have about what you’ve learned so far?
+    - I do not full understand CSS and why things won't work. I cannot figure out how to put border lines around my sections. For today JS was easier than CSS which is wild.
 
 3. How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
+    - Five hours and I thought I would take as long as yesterday. I shaved two hours down which is a win.
 
