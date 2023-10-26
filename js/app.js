@@ -107,23 +107,28 @@ function seasonQ(){
 seasonQ();
 
 // Question 5
-let travel = prompt("Have I ever traveled abroad? Yes or No?");
-travel = travel.toLowerCase();
-console.log(travel);
+function travelQ(){
 
-switch (travel) {
-  case "yes":
-  case "y":
-    //console.log(You guessed right! I've been in 10 countries total.);
-    alert("You guessed right! I've been in 10 countries total.");
-    totalCorrect++;
-    break;
-  case "no":
-  case "n":
-    //console.log(Very wrong! I've been in 10 countries total!);
-    alert("Very wrong! I've been in 10 countries total!");
-    break;
+  let travel = prompt("Have I ever traveled abroad? Yes or No?");
+  travel = travel.toLowerCase();
+  console.log(travel);
+  
+  switch (travel) {
+    case "yes":
+    case "y":
+      //console.log(You guessed right! I've been in 10 countries total.);
+      alert("You guessed right! I've been in 10 countries total.");
+      totalCorrect++;
+      break;
+    case "no":
+    case "n":
+      //console.log(Very wrong! I've been in 10 countries total!);
+      alert("Very wrong! I've been in 10 countries total!");
+      break;
+  }
+
 }
+travelQ();
 
 //Question 6 too high too low loops 4 attempts
 let age = 25;
