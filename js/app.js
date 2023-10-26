@@ -83,23 +83,28 @@ hobbiesQ();
 
 // Question 4
 
-let season = prompt("Do you think my favorite season is fall? Yes or No?");
-season = season.toLowerCase();
-console.log(season);
+function seasonQ(){
 
-switch (season) {
-  case "no":
-  case "n":
-    //console.log(That's right! My favorite season is Winter.);
-    alert("That's right! My favorite season is Winter.");
-    totalCorrect++;
-    break;
-  case "yes":
-  case "y":
-    //console.log(False! I like Winter!);
-    alert("False! I like Winter!");
-    break;
+  let season = prompt("Do you think my favorite season is fall? Yes or No?");
+  season = season.toLowerCase();
+  console.log(season);
+  
+  switch (season) {
+    case "no":
+    case "n":
+      //console.log(That's right! My favorite season is Winter.);
+      alert("That's right! My favorite season is Winter.");
+      totalCorrect++;
+      break;
+    case "yes":
+    case "y":
+      //console.log(False! I like Winter!);
+      alert("False! I like Winter!");
+      break;
+  }
+
 }
+seasonQ();
 
 // Question 5
 let travel = prompt("Have I ever traveled abroad? Yes or No?");
