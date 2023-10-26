@@ -1,6 +1,7 @@
 "use strict";
 
 //Ask user's name
+
 let userName = prompt("What is your name?");
 console.log(userName);
 //console.log(Hey, ${userName},! Welcome to my site! Let's answer some questions to get to know me.);
@@ -13,7 +14,8 @@ alert(
 let totalCorrect = 0
 
 // Question 1
-let cat = prompt("Do you think I have 3 cat? Yes or No?");
+function catQ(){
+  let cat = prompt("Do you think I have 3 cat? Yes or No?");
 cat = cat.toLowerCase();
 console.log(cat);
 
@@ -25,9 +27,14 @@ if (cat === "no" || cat === "n") {
   alert("Correct! I do have three!");
   totalCorrect++;
 }
+}
 
+catQ(); 
 // Question 2
-let color = prompt("Do you think orange is my favorite color? Yes or No?");
+function colorQ(){
+
+
+  let color = prompt("Do you think orange is my favorite color? Yes or No?");
 color = color.toLowerCase();
 console.log(color);
 
@@ -43,10 +50,16 @@ switch (color) {
     //console.log(That is wrong! I like forest green! );
     alert("That is wrong! I like forest green!");
     break;
+
 }
 
+}
+colorQ();
+
 // Question 3
-let hobbies = prompt("Do you think I have any athletic hobbies? Yes or No?");
+function hobbiesQ(){
+
+  let hobbies = prompt("Do you think I have any athletic hobbies? Yes or No?");
 hobbies = hobbies.toLowerCase();
 console.log(hobbies);
 
@@ -64,73 +77,97 @@ switch (hobbies) {
     break;
 }
 
-// Question 4
-let season = prompt("Do you think my favorite season is fall? Yes or No?");
-season = season.toLowerCase();
-console.log(season);
 
-switch (season) {
-  case "no":
-  case "n":
-    //console.log(That's right! My favorite season is Winter.);
-    alert("That's right! My favorite season is Winter.");
-    totalCorrect++;
-    break;
-  case "yes":
-  case "y":
-    //console.log(False! I like Winter!);
-    alert("False! I like Winter!");
-    break;
 }
+hobbiesQ();
+
+// Question 4
+
+function seasonQ(){
+
+  let season = prompt("Do you think my favorite season is fall? Yes or No?");
+  season = season.toLowerCase();
+  console.log(season);
+  
+  switch (season) {
+    case "no":
+    case "n":
+      //console.log(That's right! My favorite season is Winter.);
+      alert("That's right! My favorite season is Winter.");
+      totalCorrect++;
+      break;
+    case "yes":
+    case "y":
+      //console.log(False! I like Winter!);
+      alert("False! I like Winter!");
+      break;
+  }
+
+}
+seasonQ();
 
 // Question 5
-let travel = prompt("Have I ever traveled abroad? Yes or No?");
-travel = travel.toLowerCase();
-console.log(travel);
+function travelQ(){
 
-switch (travel) {
-  case "yes":
-  case "y":
-    //console.log(You guessed right! I've been in 10 countries total.);
-    alert("You guessed right! I've been in 10 countries total.");
-    totalCorrect++;
-    break;
-  case "no":
-  case "n":
-    //console.log(Very wrong! I've been in 10 countries total!);
-    alert("Very wrong! I've been in 10 countries total!");
-    break;
+  let travel = prompt("Have I ever traveled abroad? Yes or No?");
+  travel = travel.toLowerCase();
+  console.log(travel);
+  
+  switch (travel) {
+    case "yes":
+    case "y":
+      //console.log(You guessed right! I've been in 10 countries total.);
+      alert("You guessed right! I've been in 10 countries total.");
+      totalCorrect++;
+      break;
+    case "no":
+    case "n":
+      //console.log(Very wrong! I've been in 10 countries total!);
+      alert("Very wrong! I've been in 10 countries total!");
+      break;
+  }
+
 }
+travelQ();
 
 //Question 6 too high too low loops 4 attempts
-let age = 25;
-let attempts = 4;
 
-for( let i = 1; i <= attempts; i++ ) {
-   let ageGuess = prompt("Guess how old I am?");
-   let guess = Number(ageGuess);
-   console.log(guess)
+function ageQ(){
 
-   if( guess === age ) {
-    //console.log(Congrats! You guessed correctly! I am 25!)
-    alert("Congrats! You guessed correctly! I am 25!");
-    totalCorrect++;
-    break;
-   } else if (guess < age) {
-    //console.log(Too low! I wish I was younger... Try Again!)
-    alert ("Too low! I wish I was younger... Try Again!");
-   } else if (guess > age) {
-    //console.log(Too high! I'm not that old! Try Again!)
-    alert("Too high! I'm not that old! Try Again!");
+  let age = 25;
+  let attempts = 4;
+  
+  for( let i = 1; i <= attempts; i++ ) {
+     let ageGuess = prompt("Guess how old I am?");
+     let guess = Number(ageGuess);
+     console.log(guess)
+  
+     if( guess === age ) {
+      //console.log(Congrats! You guessed correctly! I am 25!)
+      alert("Congrats! You guessed correctly! I am 25!");
+      totalCorrect++;
+      break;
+     } else if (guess < age) {
+      //console.log(Too low! I wish I was younger... Try Again!)
+      alert ("Too low! I wish I was younger... Try Again!");
+     } else if (guess > age) {
+      //console.log(Too high! I'm not that old! Try Again!)
+      alert("Too high! I'm not that old! Try Again!");
+     }
+      if (i === attempts) {
+      alert("You used up all your attempts. I am 25!")
+    } 
    }
-    if (i === attempts) {
-    alert("You used up all your attempts. I am 25!")
-  } 
- }
+  
+
+}
+ageQ();
 
 //Question 7 multiple correct in array, 6 attempts, display correct answers with loop, track total # of correct answer and give them score out of 7
 
-let catName = ["Cat", "Emi","Ava"];
+function catNameQ(){
+
+  let catName = ["Cat", "Emi","Ava"];
 let catAttempts = 6;
 let rightAnswer = false;
 
@@ -152,6 +189,9 @@ while (!rightAnswer && catAttempts >0){
       }
     }
   }
+
+}
+catNameQ();
 
 //track of score message
 //console.log(You got ${totalCorrect} out of 7)
