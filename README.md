@@ -1,4 +1,4 @@
-# Lab 2, 3, 4
+# Lab 2, 3, 4, 5
 
 ## About Me Pt.1 (HTML/CSS/JS)
 
@@ -89,3 +89,28 @@ I was Driver on: [Lou's about me project](https://github.com/Lefty8969/Projectla
 
 - How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
     - It took around 3 hours maybe. I had a feeling this lab was going to be shorter because we already had existing code written, it was just creating functions to go around those codes. So an hour and a half to complete my portion which is definitely shorter then all the other times I've taken for my labs.
+
+## About Me Pt.4 (Functions/Pair Programming)
+
+Apply finishing touches to your About Me web site. Make sure your final app meets all of the requirements for this project.
+
+### Author: Xin Deng
+
+### Links and Resources
+
+1. [Setting Up a New Code 201 Project](https://codefellows.github.io/code-201-guide/curriculum/class-02/project-setup)
+
+
+### Lighthouse Accessibility Report Score
+
+![Lighthouse report for Lab 2](img/lighthouse5.png)
+
+### Reflections and Comments
+
+- How did this go, overall?
+    - I did as best as I could with what I know. The CSS demo in class today really helped with what I couldn't figure out last lab and I made it work this time.
+- What observations or questions do you have about what you’ve learned so far?
+    - I don't have any questions but I like the tip given about working with CSS inside the console is helpful because you can add, delete, or toggle changes and you can see the effects live.
+
+- How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
+    - This assignment took me an hour. I added what I couldn't do last lab and that was enough for me. My lighthouse score is 100 so that is a win.
