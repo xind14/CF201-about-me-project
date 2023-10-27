@@ -34,6 +34,7 @@ h2 {
   color: #0d478d;
   font-size: 3em;
   max-height: 80px;
+  border-bottom: 2px solid black;
 }
 
 p {
@@ -49,8 +50,8 @@ h3 {
 #goals {
   color: #0d478d;
   font-size: 2em;
-  max-width: 800px;
   max-height: 50px;
+  border-bottom: 2px solid black;
 }
 
 #bioimgsection {
@@ -71,6 +72,8 @@ section div.ulcontainer {
   margin: 10px auto 10px;
   max-width: 960px;
   overflow: hidden;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
 }
 
 section div.education {
