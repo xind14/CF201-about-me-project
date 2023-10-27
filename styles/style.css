@@ -9,92 +9,106 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 2;
-  padding: 20px;
-  background: #ccc;
+  background: lightcoral;
 }
 
 header {
-  background-color: lightblue;
-  color: rgb(40, 53, 59);
-  font-size: 60pt;
-  text-align: center;
+  background-color: cadetblue;
+  max-width: 960px ;
+  margin: 10px auto 10px;
 }
 
-#goals {
-  color: #0d478d;
-  font-size: 20pt;
+h1 {
+  color: rgb(40, 53, 59);
+  font-size: 5em;
+  text-align: center;
 }
 
 main {
-  background-color: antiquewhite;
-  padding: 0 20px 20px 20px;
+  background-color: beige;
+  padding: 20px 20px 20px 20px;
 }
 
-section > img {
-  width: 300px;
-  height: 300px;
-  padding: 20px;
-}
-
-section#headshot {
-  text-align: center;
-}
-
-section#biosection {
-  margin-right: 20px;
-  padding-left: 20px;
-  border: 20px color black;
-}
 
 h2 {
   color: #0d478d;
-  font-size: 30pt;
+  font-size: 3em;
+  max-height: 80px;
 }
 
 p {
-  padding-left: 20px;
+  font-size: 1.25em;
+  margin-left: 20px;
 }
 
 h3 {
   color: #008cff;
-  font-size: 20pt;
+  font-size: 2em;
 }
 
+#goals {
+  color: #0d478d;
+  font-size: 2em;
+  max-width: 800px;
+  max-height: 50px;
+}
+
+#bioimgsection {
+  text-align: center;
+}
+
+#headshot {
+  max-width: 400px;
+}
+
+#summary {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
 section div.ulcontainer {
-  margin: auto;
-  width: 80%;
+  margin: 10px auto 10px;
+  max-width: 960px;
   overflow: hidden;
 }
 
 section div.education {
   float: left;
   width: 50%;
+  padding-left: 120px;
 }
 
 section div.job {
   float: left;
   width: 50%;
+  padding-left: 120px;
 }
 
 ul li {
   margin-left: 50px;
+  font-size: 1.25em;
   list-style-type: circle;
 }
 
 ol li {
   margin-left: 50px;
+  font-size: 1.25em;
   list-style-type: decimal;
 }
 
-section#candy {
+#candy {
   margin-right: 20px;
   padding-left: 20px;
-  border: 20px color black;
+  max-width: 960px;
+  margin: 0 auto 0px;
 }
-footer {
-  background-color: #ffbb00;
-  color: black;
-  text-align: center;
-  bottom: 0px;
-  width: 100%;
-}
+
+  footer {
+    background-color: #ffbb00;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+  
